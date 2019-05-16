@@ -1,15 +1,9 @@
 import React from "react"
+import VideoCard from "./VideoCard"
+import videoData from "./videoData"
 import "./VideoTestimony.css"
 const VideoTestimony = () => (
-  <div className="vidios-container">
-    <iframe
-      title="capstone"
-      src="https://www.youtube.com/embed/HPI9NjMxq_A"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-  </div>
+  <div className="vidios-container">{videoData.map(VideoCard)}</div>
 )
 
 export default VideoTestimony
